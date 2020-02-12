@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
-import * as faker from 'faker';
+import { range } from 'lodash';
 import {
   faPhoneSquare as phoneIcon,
   faEnvelope as emailIcon,
   faMapMarkedAlt as addressIcon,
   faCalendar as calendarIcon,
+  faLink as linkIcon,
+  faUsers as usersIcon
 } from '@fortawesome/free-solid-svg-icons';
 import {
   faGithub as githubIcon,
@@ -18,19 +20,23 @@ import {
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  range = range;
+
   icons = {
     phoneIcon, emailIcon, addressIcon, calendarIcon,
-    githubIcon, linkedinIcon, stackOverflowIcon
+    githubIcon, linkedinIcon, stackOverflowIcon,
+    linkIcon, usersIcon,
   };
 
   skills = [
     { name: 'Javascript', value: 10 },
     { name: 'TypeScript', value: 9 },
     { name: 'PHP', value: 7 },
-    { name: 'Python', value: 6 },
+    { name: 'Python', value: 5 },
     { name: 'SQL', value: 8 },
+    { name: 'Mongo', value: 7 },
     { name: 'Angular', value: 10 },
-    { name: 'NodeJS', value: 9 },
+    { name: 'NodeJS', value: 10 },
     { name: 'React', value: 9 },
     { name: 'HAPI', value: 6 },
     { name: 'NestJS', value: 8 },

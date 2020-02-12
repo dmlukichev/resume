@@ -51,8 +51,8 @@
       <span class="skill__caption">{{skill.name}}</span>
       <span class="skill__bar">
         <span
-          class="skill__bar-inner"
-          [style.width]="skill.value/10 * 100 + '%'"
+          *ngFor="let i of range(10)" class="skill__bar-inner"
+          [ngClass]="{ 'skill__bar-inner--active': skill.value > i }"
         ></span>
       </span>
     </p>
@@ -64,8 +64,8 @@
       <span class="skill__caption">{{skill.name}}</span>
       <span class="skill__bar">
         <span
-          class="skill__bar-inner"
-          [style.width]="skill.value/10 * 100 + '%'"
+          *ngFor="let i of range(10)" class="skill__bar-inner"
+          [ngClass]="{ 'skill__bar-inner--active': skill.value > i }"
         ></span>
       </span>
     </p>
@@ -84,12 +84,28 @@
     <h2>Experience</h2>
 
     <article class="experience">
-      <div class="experience__position">
-        <p class="experience__title">Senior Frontend Developer</p>
-        <p class="experience__company">payever</p>
-      </div>
-      <div class="experience__timespan">
-        Apr 2019 → Jan 2020
+      <div class="experience__heading">
+        <div class="experience__position">
+          <p class="experience__title">Senior Frontend Developer</p>
+          <p class="experience__company">
+            payever
+
+            <a href="https://getpayever.com/" target="_blank">
+              <fa-icon [icon]="icons.linkIcon"></fa-icon>
+              getpayever.com
+            </a>
+          </p>
+        </div>
+        <div class="experience__meta">
+          <span>Full-time</span>
+          <span>
+            <fa-icon [icon]="icons.usersIcon"></fa-icon>
+            3-7 persons
+          </span>
+          <span class="experience__timespan">
+            Apr 2019 → Jan 2020
+          </span>
+        </div>
       </div>
       <div class="experience__techs">
         <span>angular</span>
@@ -154,12 +170,29 @@
     <figure class="spacer"></figure>
 
     <article class="experience">
-      <div class="experience__position">
-        <p class="experience__title">Senior Frontend Developer</p>
-        <p class="experience__company">SnapCart</p>
-      </div>
-      <div class="experience__timespan">
-        Apr 2018 → Feb 2019
+      <div class="experience__heading">
+        <div class="experience__position">
+          <p class="experience__title">Senior Frontend Developer</p>
+          <p class="experience__company">
+            Snapcart
+
+            <a href="https://snapcart.global/" target="_blank">
+              <fa-icon [icon]="icons.linkIcon"></fa-icon>
+              snapcart.global
+            </a>
+          </p>
+        </div>
+
+        <div class="experience__meta">
+          <span>Full-time</span>
+          <span>
+            <fa-icon [icon]="icons.usersIcon"></fa-icon>
+            6-8 persons
+          </span>
+          <span class="experience__timespan">
+            Apr 2018 → Feb 2019
+          </span>
+        </div>
       </div>
       <div class="experience__techs">
         <span>reactjs</span>
@@ -177,7 +210,7 @@
         </ul>
 
         <h4>Achievements</h4>
-        <ol>
+        <ul>
           <li>
             Dashboard has been successfully launched and was used by teams in
             4 different countries
@@ -185,19 +218,35 @@
           <li>
             Implemented a reusable ui-kit that was applied in other company apps
           </li>
-        </ol>
+        </ul>
       </div>
     </article>
 
     <figure class="spacer"></figure>
 
     <article class="experience">
-      <div class="experience__position">
-        <p class="experience__title">Senior Frontend Developer</p>
-        <p class="experience__company">Dashnex</p>
-      </div>
-      <div class="experience__timespan">
-        Aug 2017 → Mar 2018
+      <div class="experience__heading">
+        <div class="experience__position">
+          <p class="experience__title">Senior Frontend Developer</p>
+          <p class="experience__company">
+            Dashnex
+
+            <a href="https://dashnex.com/" target="_blank">
+              <fa-icon [icon]="icons.linkIcon"></fa-icon>
+              dashnex.com
+            </a>
+          </p>
+        </div>
+        <div class="experience__meta">
+          <span>Contract</span>
+          <span>
+            <fa-icon [icon]="icons.usersIcon"></fa-icon>
+            5 persons
+          </span>
+          <span class="experience__timespan">
+            Aug 2017 → Mar 2018
+          </span>
+        </div>
       </div>
       <div class="experience__techs">
         <span>typescript</span>
@@ -228,12 +277,28 @@
     <figure class="spacer"></figure>
 
     <article class="experience">
-      <div class="experience__position">
-        <p class="experience__title">Consultant</p>
-        <p class="experience__company">MM.LaFleur</p>
-      </div>
-      <div class="experience__timespan">
-        Oct 2016 → May 2017
+      <div class="experience__heading">
+        <div class="experience__position">
+          <p class="experience__title">IT Consultant</p>
+          <p class="experience__company">
+            MM.LaFleur
+
+            <a href="https://dashnex.com/" target="_blank">
+              <fa-icon [icon]="icons.linkIcon"></fa-icon>
+              mmlafleur.com
+            </a>
+          </p>
+        </div>
+        <div class="experience__meta">
+          <span>Contract</span>
+          <span>
+            <fa-icon [icon]="icons.usersIcon"></fa-icon>
+            Solo
+          </span>
+          <span class="experience__timespan">
+            Oct 2016 → May 2017
+          </span>
+        </div>
       </div>
       <div class="experience__techs">
         <span>typescript</span>
@@ -286,12 +351,22 @@
     <figure class="spacer"></figure>
 
     <article class="experience">
-      <div class="experience__position">
-        <p class="experience__title">Fullstack developer</p>
-        <p class="experience__company">Targetix</p>
-      </div>
-      <div class="experience__timespan">
-        Aug 2013 → Dec 2014
+      <div class="experience__heading">
+        <div class="experience__position">
+          <p class="experience__title">Fullstack developer</p>
+          <p class="experience__company">VLS Group</p>
+        </div>
+
+        <div class="experience__meta">
+          <span>Full-time</span>
+          <span>
+            <fa-icon [icon]="icons.usersIcon"></fa-icon>
+            3-4 persons
+          </span>
+          <span class="experience__timespan">
+            Aug 2013 → Dec 2014
+          </span>
+        </div>
       </div>
       <div class="experience__techs">
         <span>php</span>
@@ -315,12 +390,20 @@
   <section>
     <h2>Education</h2>
     <article class="experience">
-      <div class="experience__position">
-        <p class="experience__title">Master of Computer Applications</p>
-        <p class="experience__company">Tambov State Technical University</p>
-      </div>
-      <div class="experience__timespan">
-        Sep 2004 → Jun 2010
+      <div class="experience__heading">
+        <div class="experience__position">
+          <p class="experience__title">Master of Computer Applications</p>
+          <p class="experience__company">
+            Tambov State Technical University
+            <a href="https://www.tstu.ru/en/" target="_blank">
+              <fa-icon [icon]="icons.linkIcon"></fa-icon>
+              www.tstu.ru
+            </a>
+          </p>
+        </div>
+        <div class="experience__meta">
+          <span>Sep 2004 → Jun 2010</span>
+        </div>
       </div>
     </article>
   </section>

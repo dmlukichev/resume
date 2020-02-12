@@ -83,7 +83,7 @@ aside#sidebar {
       }
 
       &__bar {
-        display: inline-block;
+        display: flex;
         width: 100%;
         background: #224;
         height: .875rem;
@@ -91,7 +91,12 @@ aside#sidebar {
         &-inner {
           display: inline-block;
           height: 100%;
-          background: white;
+          width: 10%;
+          margin-right: 2px;
+
+          &:last-child { margin-right: 0 }
+
+          &--active { background: white }
         }
       }
     }
@@ -119,39 +124,63 @@ main#content {
     }
 
     figure.spacer {
-      margin: 1rem -1rem;
+      margin: 0 -1rem;
       border-bottom: 3px dotted #ccf;
     }
 
     .experience {
-      display: flex;
-      flex-wrap: wrap;
+      padding: 1rem 0;
+      page-break-inside: avoid;
+
+      &__heading {
+        display: flex;
+        margin-bottom: .5rem;
+      }
 
       &__position {
         flex-grow: 1;
 
+      }
 
-        .experience__title {
-          margin: 0 0 .125rem;
-          font-size: 1.125rem;
-          font-weight: 900;
-        }
+      &__title {
+        margin: 0 0 .125rem;
+        font-size: 1.125rem;
+        font-weight: 900;
+      }
 
-        .experience__company {
-          margin: 0 0 .375em;
-          font-weight: lighter;
-          color: #44a;
+      &__company {
+        margin: 0 0 .375em;
+        font-weight: lighter;
+        color: #44a;
+
+        a {
+          margin-left: 1em;
+          font-size: .875em;
+          color: #666;
+          text-decoration: none;
         }
       }
 
-      &__timespan {
-        width: 200px;
-        flex-shrink: 0;
-        color: #112;
-        font-size: .75rem;
+      &__meta {
         display: flex;
-        align-items: center;
-        justify-content: flex-end;
+        height: max-content;
+        border: 1px dotted #ccc;
+        border-radius: .25rem;
+
+        & > span {
+          white-space: nowrap;
+          border-right: 1px dotted #ccc;
+          border-radius: 1px;
+          height: max-content;
+          padding: .25rem .75rem;
+          font-size: .75em;
+
+          fa-icon {
+            margin-right: .5em;
+          }
+
+          &:last-child { border-right: none }
+        }
       }
 
       &__techs {
