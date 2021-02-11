@@ -37,8 +37,7 @@ export class AppComponent {
     { name: 'Mongo', value: 7 },
     { name: 'Angular', value: 10 },
     { name: 'NodeJS', value: 10 },
-    { name: 'React', value: 9 },
-    { name: 'HAPI', value: 6 },
+    { name: 'React', value: 7 },
     { name: 'NestJS', value: 8 },
   ];
 
