@@ -30,19 +30,21 @@ export class AppComponent {
 
   skills = [
     { name: 'Javascript', value: 10 },
-    { name: 'TypeScript', value: 9 },
-    { name: 'PHP', value: 7 },
+    { name: 'TypeScript', value: 10 },
+    { name: 'PHP', value: 6 },
     { name: 'Python', value: 5 },
-    { name: 'SQL', value: 8 },
+    { name: 'SQL', value: 7 },
     { name: 'Mongo', value: 7 },
     { name: 'Angular', value: 10 },
     { name: 'NodeJS', value: 10 },
-    { name: 'React', value: 7 },
-    { name: 'NestJS', value: 8 },
+    { name: 'React', value: 6 },
+    { name: 'NestJS', value: 10 },
+    { name: 'Kubernetus', value: 7 },
   ];
 
   languages = [
+    { name: 'Русский', value: 10 },
     { name: 'English', value: 8 },
-    { name: 'Russian', value: 10 },
+    { name: 'Español', value: 2 },
   ];
 }
