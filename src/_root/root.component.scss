@@ -1,0 +1,132 @@
+:host {
+  display: block;
+  margin: 0 auto;
+  max-width: 70rem;
+  position: relative;
+
+  @media print {
+    max-width: unset;
+  }
+}
+
+::ng-deep tui-root .t-root-content {
+  display: flex;
+  height: 100%;
+  margin: 0 auto;
+
+  @media print {
+    margin: 0;
+    border: 0;
+    height: calc(var(--page-a4-height) * 3);
+    overflow: hidden;
+  }
+}
+
+aside#sidebar {
+  background: color-mix(in srgb, var(--tui-background-accent-1-pressed), black 33%);
+  color: var(--tui-text-primary);
+  width: 32rem;
+}
+
+aside#sidebar {
+  --padding-horizontal: 1.25rem;
+
+  .controls {
+    padding: 1rem var(--padding-horizontal);
+    display: flex;
+    justify-content: space-between;
+
+    @media print {
+      & {
+        display: none;
+      }
+    }
+  }
+
+  .name {
+    font-size: 2em;
+    text-transform: capitalize;
+    margin: 1rem var(--padding-horizontal) .375rem;
+    margin-block-end: 0;
+  }
+
+  .title {
+    font-size: 1.25em;
+    font-weight: lighter;
+    margin: .375rem var(--padding-horizontal) 1rem;
+  }
+
+  tui-icon {
+    scale: .675;
+  }
+
+  ::ng-deep tui-accordion-item .t-content {
+    padding: 0;
+  }
+}
+
+main#content {
+  padding: 1rem 1.5rem;
+
+  .brief {
+    display: grid;
+    gap: 1em 1.75em;
+    grid-template-columns: 75fr 25fr;
+    grid-auto-rows: auto auto;
+    grid-template-areas:
+      'header aside'
+      'text   aside';
+    margin-bottom: 1rem;
+
+    h1 span.name {
+      text-transform: uppercase;
+      color: color-mix(in srgb, var(--tui-background-accent-1-pressed), white 10%);
+    }
+
+
+    aside {
+      margin-top: calc(-1 * var(--t-padding));
+      margin-right: calc(-1 * var(--t-padding));
+      margin-bottom: calc(-1 * var(--t-padding));
+      grid-area: aside;
+      background-size: cover;
+      background-position: 66%;
+      transform: scaleX(-1);
+    }
+  }
+
+  experience {
+    margin: 1em 0;
+  }
+
+  .experience__techs {
+    display: flex;
+    gap: .25em;
+  }
+
+  .footer-ref {
+    text-align: center;
+    color: var(--tui-text-tertiary);
+
+    @media screen {
+      display: none;
+    }
+  }
+}
+
+
+::ng-deep .print-spacer {
+  padding: 0;
+  margin: 0;
+
+  @media screen {
+    display: none;
+  }
+}
+
+@media print {
+  ::ng-deep *[tuicardlarge] {
+      box-shadow: none !important;
+      outline: 1px solid rgba(0,0,0,.2) !important;
+  }
+}

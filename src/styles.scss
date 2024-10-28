@@ -1,4 +1,18 @@
 html, body {
+  --page-a4-width: 210mm;
+  --page-a4-height: 297mm;
+
   margin: 0;
   min-height: 100%;
+  font-size: max(12px, 1.3vmin);
+
+  @media print {
+    width: var(--page-a4-width);
+    height: var(--page-a4-height);
+    font-size: 8pt;
+  }
+}
+
+body {
+  background: rgba(0,0,0,.85);
 }

@@ -1,12 +1,18 @@
-import { enableProdMode } from '@angular/core';
-import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import { NG_EVENT_PLUGINS } from "@taiga-ui/event-plugins";
+import { provideAnimations } from "@angular/platform-browser/animations";
+import { provideExperimentalZonelessChangeDetection } from '@angular/core'
 
-import { AppModule } from './app/app.module';
-import { environment } from './environments/environment';
+import { bootstrapApplication } from '@angular/platform-browser'
+import { RootComponent } from './_root/root.component'
+import { provideTheming } from './_root/theme.provider'
+import { provideLang } from './_root/lang.provider'
 
-if (environment.production) {
-  enableProdMode();
-}
-
-platformBrowserDynamic().bootstrapModule(AppModule)
-  .catch(err => console.error(err));
+bootstrapApplication(RootComponent, {
+    providers: [
+        provideAnimations(),
+        provideExperimentalZonelessChangeDetection(),
+        provideTheming(),
+        provideLang(),
+        NG_EVENT_PLUGINS
+    ]
+}).catch(console.error)

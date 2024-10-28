@@ -1,0 +1,41 @@
+<header tuiHeader>
+  <h3 tuiTitle>
+    <span class="role">{{job().role}}</span>
+    <span tuiSubtitle>
+      <span class="name">{{job().company}}</span>
+
+      <a [href]="job().site" tuiLink class="link">
+        {{prettyLink(job().site)}}
+        <tui-icon icon="@tui.external-link" />
+      </a>
+    </span>
+  </h3>
+  <aside tuiAccessories>
+    <div tuiGroup class="group" [collapsed]="true">
+      <button appearance="outline-grayscale" tuiButton type="button">
+        {{ job().employment }}
+      </button>
+      <button appearance="outline-grayscale" tuiButton type="button">
+        {{ job().dates[0] }} → {{ job().dates[1] }}
+      </button>
+    </div>
+  </aside>
+</header>
+
+<main>
+  @if (isArray(job().description)) {
+    @for (p of job().description; track p) {
+      <p>{{p}}</p>
+    }
+  } @else {
+    <div class="raw" [innerHtml]="asString(job().description) | safeHtml"></div>
+  }
+</main>
+
+<footer>
+  @for (tech of job().techs; track tech[0]) {
+    <tui-chip [appearance]="tech[1] ==='primary' ? 'primary' : 'secondary-grayscale'">
+      {{tech[0]}}
+    </tui-chip>
+  }
+</footer>

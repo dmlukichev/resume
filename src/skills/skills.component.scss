@@ -1,0 +1,12 @@
+:host {
+  padding: .5rem var(--padding-horizontal);
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+tui-rating {
+  fill: currentColor;
+  font-size: 0.5rem;
+  inline-size: 10rem;
+}

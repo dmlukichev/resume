@@ -1,0 +1,121 @@
+<tui-root [attr.tuiTheme]="theme$ | async">
+  <aside id="sidebar" [attr.tuiTheme]="'dark'">
+    <div class="controls">
+      <button tuiButton size="s" (click)="theme$.toggle()">
+        <tui-icon [icon]="'@tui.' + ((theme$ | async) === 'light' ? 'sun' : 'moon')" />
+      </button>
+
+      <div tuiGroup [collapsed]="true">
+        <button tuiButton
+                type="button"
+                [appearance]="lang() === 'en' ? 'primary' : 'outline'"
+                (click)="lang$.setLang('en')"
+        >
+          🇺🇸
+        </button>
+        <button tuiButton
+                type="button"
+                [appearance]="lang() === 'ru' ? 'primary' : 'outline'"
+                (click)="lang$.setLang('ru')"
+        >
+          🇷🇺
+        </button>
+      </div>
+
+      <a tuiButton
+         [href]="'assets/'+lang()+'.pdf'"
+         size="s"
+         download="dmitry.lukichev.{{lang()}}.pdf"
+      >
+        <tui-icon icon="@tui.save" />
+      </a>
+    </div>
+
+    <tui-accordion
+      class="container"
+      [rounded]="false"
+      [closeOthers]="false"
+    >
+      <tui-accordion-item
+        borders="top-bottom"
+        [open]="true"
+        [showArrow]="false"
+        [disableHover]="true"
+      >
+        Personal Info
+        <resume-personal *tuiAccordionItemContent />
+      </tui-accordion-item>
+      <tui-accordion-item
+        borders="top-bottom"
+        [open]="true"
+        [showArrow]="false"
+        [disableHover]="true"
+      >
+        Skills
+        <ng-template tuiAccordionItemContent>
+          <resume-skills area="skills"/>
+        </ng-template>
+      </tui-accordion-item>
+      <tui-accordion-item
+        borders="top-bottom"
+        [open]="true"
+        [showArrow]="false"
+        [disableHover]="true"
+      >
+        Languages
+        <ng-template tuiAccordionItemContent>
+          <resume-skills area="languages"/>
+        </ng-template>
+      </tui-accordion-item>
+    </tui-accordion>
+  </aside>
+
+  <main id="content">
+    <section tuiCardLarge tuiAppearance="floating" class="brief">
+      <aside [style.background-image]="'url(' + avatarUrl + ')'"></aside>
+      <header tuiHeader>
+        <h1 tuiTitle>
+          <span class="name">Dmitry Lukichev</span>
+          <span tuiSubtitle>Senior Software Engineer / Software Architect</span>
+        </h1>
+      </header>
+      <main [innerHtml]="data().brief | safeHtml">
+      </main>
+    </section>
+
+    <section>
+      @for (job of jobs(); track job) {
+        <experience [job]="job" />
+        @if (job.printSpacer) {
+          <p class="print-spacer" [style.height]="job.printSpacer"></p>
+        }
+      }
+
+      <education [education]="education()" />
+    </section>
+
+    @if (media() === 'print') {
+      <p class="footer-ref" [style.margin-top]="data().footerSpacing">
+        Most recent version of this resume is available at
+        <a tuiLink href="https://dmlukichev.github.io/resume/?ref=pdf">https://dmlukichev.github.io/resume/</a>
+      </p>
+    }
+  </main>
+</tui-root>
+
+<!-- dev-->
+<!--<div style="-->
+<!--  position: absolute;-->
+<!--  top: calc(var(&#45;&#45;page-a4-height) - 1.5px);-->
+<!--  left: 0; right: 0;-->
+<!--  border-bottom: red 3px dotted;-->
+<!--"-->
+<!--&gt;</div>-->
+<!--<div style="-->
+<!--  position: absolute;-->
+<!--  top: calc(2 * var(&#45;&#45;page-a4-height) - 1.5px);-->
+<!--  left: 0; right: 0;-->
+<!--  border-bottom: red 3px dotted;-->
+<!--"-->
+<!--&gt;</div>-->
+<!-- enddev-->

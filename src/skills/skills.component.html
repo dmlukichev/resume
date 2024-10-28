@@ -1,0 +1,13 @@
+@for (item of data(); track item) {
+  <div>
+    {{ item.name }}
+    <tui-rating
+      class="rating"
+      [icon]="icon(item.value)"
+      [attr.data-value]="item.value"
+      [max]="10"
+      [ngModel]="item.value"
+      [readOnly]="true"
+    />
+  </div>
+}

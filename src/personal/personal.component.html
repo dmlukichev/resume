@@ -1,0 +1,23 @@
+<address>
+  <tui-icon icon="@tui.map"/>
+  {{data().address}}
+</address>
+<a tuiLink [href]="'mailto:' + data().email" class="item">
+  <tui-icon icon="@tui.mail"/>
+  {{data().email}}
+</a>
+<a tuiLink [href]="makePhoneHref(data().phone)" class="item">
+  <tui-icon icon="@tui.phone"/>
+  {{ data().phone }}
+</a>
+<p>
+  <tui-icon icon="@tui.cake"/>
+  {{data().dateOfBirth}}
+</p>
+
+@for (social of ['telegram', 'linkedin', 'github', 'so']; track social) {
+  <a tuiLink [href]="socials[social].makeLink(data().social[social])" class="item" target="_blank">
+    <tui-icon [icon]="socials[social].icon"/>
+    {{data().social[social]}}
+  </a>
+}

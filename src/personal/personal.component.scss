@@ -1,0 +1,34 @@
+:host {
+  margin: .75rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: .0675rem;
+}
+
+:host > * {
+  padding: .5em var(--padding-horizontal);
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    background: rgba(255,255,255,.1);
+  }
+
+  &:not(:last-child) {
+    margin-top: 0;
+    margin-bottom: .125rem;
+  }
+
+  tui-icon {
+    margin-right: .5em;
+  }
+}
+
+a.item[tuiLink] {
+  color: var(--tui-text-primary);
+}
+
+address {
+  font-style: normal;
+  font-size: .94em;
+}

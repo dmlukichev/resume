@@ -1,0 +1,72 @@
+:host {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: auto 6em;
+  grid-template-areas:
+    'header header'
+    'brief  techs'
+  ;
+  gap: calc(var(--t-space) / 2) !important;
+  //break-inside: avoid;
+}
+
+header {
+  grid-area: header;
+
+  h3[tuiTitle] span.role {
+    font-weight: normal;
+    font-size: var(--tui-font-heading-6);
+  }
+
+  .group[tuiGroup] > * {
+    flex: unset;
+  }
+
+  [tuiSubtitle] {
+    .name {
+      margin-right: .5em;
+    }
+
+    a.link { margin-right: 0 }
+  }
+
+  a.link[tuiLink] {
+    display: inline-flex;
+    align-items: center;
+    gap: .1875rem;
+
+    tui-icon {
+      font-size: 1rem;
+      zoom: .875;
+    }
+  }
+}
+
+main {
+  ::ng-deep .raw {
+    p.company { font-style: italic }
+
+    ul { padding-inline-start: 1rem  }
+
+    & > *:first-child { margin-block-start: 0 }
+    & > *:last-child { margin-block-end: 0 }
+  }
+}
+
+footer {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: start;
+
+
+  tui-chip {
+    width: 100%;
+    margin-bottom: .25em;
+    justify-content: center;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
