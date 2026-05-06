@@ -1,0 +1,451 @@
+{
+	"brief": "Experienced Software Engineer and Architect with over a decade of expertise in designing and building scalable, high-performance systems. Skilled in leading teams, optimizing software architecture, and implementing robust, maintainable code across diverse platforms.\nProven track record of delivering complex projects from concept to deployment with a focus on efficiency, security, and long-term sustainability.\n",
+	"personal": {
+		"address": "Tambov, Russia",
+		"phone": "+7 909 234 56 11",
+		"email": "dmlukichev@gmail.com",
+		"dateOfBirth": "1987-08-09T00:00:00.000Z",
+		"social": {
+			"telegram": "@dmlukichev",
+			"linkedin": "~/dmlukichev",
+			"github": "~/dmlukichev",
+			"so": "~/users/851290"
+		}
+	},
+	"skills": [
+		{
+			"name": "TypeScript",
+			"value": 10
+		},
+		{
+			"name": "Rust",
+			"value": 7
+		},
+		{
+			"name": "Javascript",
+			"value": 10
+		},
+		{
+			"name": "PHP",
+			"value": 5
+		},
+		{
+			"name": "Python",
+			"value": 5
+		},
+		{
+			"name": "Postgres",
+			"value": 9
+		},
+		{
+			"name": "MariaDb/Mysql",
+			"value": 7
+		},
+		{
+			"name": "Mongo",
+			"value": 6
+		},
+		{
+			"name": "Angular",
+			"value": 10
+		},
+		{
+			"name": "React",
+			"value": 6
+		},
+		{
+			"name": "NodeJS/Deno",
+			"value": 10
+		},
+		{
+			"name": "NestJS",
+			"value": 10
+		},
+		{
+			"name": "Axum/Tower",
+			"value": 6
+		},
+		{
+			"name": "Kubernetus",
+			"value": 7
+		}
+	],
+	"languages": [
+		{
+			"name": "Русский",
+			"value": 10
+		},
+		{
+			"name": "English",
+			"value": 8
+		},
+		{
+			"name": "Srpski",
+			"value": 4
+		}
+	],
+	"education": {
+		"institution": "Tambov State Technical University",
+		"url": "http://www.tstu.ru/",
+		"area": "Applied Informatics in Economics",
+		"studyType": "Specialist degree",
+		"dates": [
+			"Sep 2004",
+			"Jun 2010"
+		]
+	},
+	"jobs": [
+		{
+			"company": {
+				"name": "Undisclosed iGaming company",
+				"site": null,
+				"description": null
+			},
+			"role": "Teamlead",
+			"employment": "Full-time",
+			"dates": [
+				"May 2024",
+				"Dec 2025"
+			],
+			"techs": [
+				[
+					"Typescript",
+					"primary"
+				],
+				[
+					"NestJs",
+					"primary"
+				],
+				[
+					"Rust",
+					"secondary"
+				],
+				[
+					"Axum",
+					"secondary"
+				],
+				[
+					"Postgres",
+					"primary"
+				],
+				[
+					"Typeorm",
+					"primary"
+				],
+				[
+					"Redis",
+					"secondary"
+				],
+				[
+					"Kafka",
+					"secondary"
+				],
+				[
+					"ClickHouse",
+					"secondary"
+				],
+				[
+					"React",
+					"secondary"
+				],
+				[
+					"NextJs",
+					"secondary"
+				],
+				[
+					"Docker",
+					"secondary"
+				]
+			],
+			"description": "<p>Led a team responsible for player engagement (bonuses, promotions, in-service currency).</p>\n<p>Responsibilities included:</p>\n<ul>\n<li>High-level architectural planning for new or reworked features</li>\n<li>Feature \"cost\" estimation for more accurate planning and prioritization</li>\n<li>Cross-team collaboration to establish inter-service contracts</li>\n<li>Quality and deadline control for task completion</li>\n<li>Development of key functionality (server-side)</li>\n<li>Mentoring team members (from developers to QA)</li>\n</ul>\n<p>During my tenure, my team implemented and/or achieved the following:</p>\n<ul>\n<li>Implemented functionality for issuing, tracking, and redeeming bonuses\n(with full double-entry bookkeeping).</li>\n<li>Developed a promotions feature with dynamically configurable conditions,\nparticipation rules, and custom visuals.</li>\n<li>Introduced an in-service currency and started the development of a loyalty\nstore.</li>\n<li>Transformed the team from being at risk of disbandment to becoming a\nperformance leader within two and a half months.</li>\n<li>Together with an excellent delivery manager, established a sound development\napproach (evolving from a constant \"everything is on fire and needed yesterday\"\nmode to informed planning one or two sprints ahead).</li>\n<li>After three months of working with the team, the SCR (Sprint Completion Rate)\nnever fell below 85%, peaking at 160%, while overtime was minimized.</li>\n<li>By migrating critical endpoints to Rust and implementing thoughtful optimization,\nservices maintained latency of ~45ms/150ms (p50/p95) even under substantial loads</li>\n</ul>"
+		},
+		{
+			"company": {
+				"name": "Documo",
+				"description": "The company is developing a cloud solution for handling faxes.",
+				"site": "https://documo.com/"
+			},
+			"role": "System Architect",
+			"employment": "Full-time",
+			"dates": [
+				"Jan 2022",
+				"Mar 2024"
+			],
+			"techs": [
+				[
+					"Typescript",
+					"primary"
+				],
+				[
+					"Angular",
+					"primary"
+				],
+				[
+					"NestJS",
+					"primary"
+				],
+				[
+					"mysql",
+					"primary"
+				],
+				[
+					"Postgres",
+					"primary"
+				],
+				[
+					"Sequelize",
+					"secondary"
+				],
+				[
+					"Typeorm",
+					"primary"
+				],
+				[
+					"Redis",
+					"secondary"
+				],
+				[
+					"Kafka",
+					"secondary"
+				],
+				[
+					"Docker",
+					"secondary"
+				],
+				[
+					"Kubernetus",
+					"primary"
+				],
+				[
+					"GCP",
+					"secondary"
+				]
+			],
+			"description": "<p>When I joined, the company faced two key challenges that needed to be addressed:\npoor infrastructure scalability and unpredictable development speed due to high\ncode coupling.</p>\n<p>I initiated the following actions:</p>\n<ul>\n<li>migration of the codebase to TypeScript with strict interface declarations</li>\n<li>separation of key processes into independent microservices where possible</li>\n<li>refactoring the codebase by moving from Express to modular NestJS</li>\n</ul>\n<p>During the project, I focused on the following tasks:</p>\n<ul>\n<li>coordinated collaboration between two development teams to maintain a unified\ndirection</li>\n<li>ensured module boundaries were respected within their respective areas of responsibility</li>\n<li>monitored code quality (both during typical code reviews and while planning\nmajor epics), addressing complex challenges through pair programming sessions</li>\n<li>took on the most complex development tasks, delegating them progressively\nas intermediate results were achieved</li>\n<li>due to the shift from a monolithic architecture to a modular monolith + microservices\nsetup, completely reworked the CI/CD system, accelerating the deployment\nprocess through effective caching</li>\n</ul>\n<p>Although not all initiatives were implemented by the time I left, what was\nimplemented significantly improved release stability and made development more\npredictable.</p>"
+		},
+		{
+			"company": {
+				"name": "DataArt",
+				"description": "IT-аутсорсер",
+				"site": "https://dataart.team/"
+			},
+			"role": "Team Lead",
+			"employment": "Full-time",
+			"dates": [
+				"Oct 2020",
+				"Jan 2022"
+			],
+			"techs": [
+				[
+					"Angular",
+					"primary"
+				],
+				[
+					"Typescript",
+					"primary"
+				],
+				[
+					"WebRTC",
+					"primary"
+				],
+				[
+					"janus",
+					"primary"
+				],
+				[
+					"ElasticSearch",
+					"secondary"
+				],
+				[
+					"LogStash",
+					"secondary"
+				],
+				[
+					"Grafana",
+					"primary"
+				]
+			],
+			"description": "<p>I can't disclose the details due to the signed NDA.</p>"
+		},
+		{
+			"company": {
+				"name": "Payever",
+				"site": "https://getpayever.com/",
+				"description": "The company develops e-commerce solutions for small-to-medium businesses"
+			},
+			"role": "Tech Lead",
+			"employment": "Full-time",
+			"dates": [
+				"Apr 2019",
+				"Aug 2020"
+			],
+			"techs": [
+				[
+					"Angular",
+					"primary"
+				],
+				[
+					"Typescript",
+					"primary"
+				],
+				[
+					"NestJS",
+					"secondary"
+				],
+				[
+					"Mongo",
+					"secondary"
+				],
+				[
+					"Cypress",
+					"secondary"
+				]
+			],
+			"description": "<p>My goal was to develop a new version of a visual website builder (similar to Wix,\nWebFlow, or Tilda) to replace the previous proof of concept, which wasn't\nable to do what it's supposed to do and would crash under after any meaningful usage\nload.</p>\n<p>The key problem areas of the previous version were the following:</p>\n<ul>\n<li>global change detection that triggered re-rendering of all application parts\nin response to every interaction</li>\n<li>inefficient client-server communication (the entire editor state was sent\nto the server after each action)</li>\n<li>high coupling between interactions that created conflicts</li>\n</ul>\n<p>Taking all this into account, I've built a proof-of-concept with following ideas\nin mind:</p>\n<ul>\n<li>there should be an object model (similar to the virtual DOM), where the objects\nwould be the result elements (blocks, sections, product, etc.), not HTML elements</li>\n<li>a rendering module that transforms this virtual DOM based on the context passed\nto it should be an independent model working outside the framework (in pure\nJavaScript).</li>\n<li>any interaction should not modify the state directly, but generate an action,\nwhich, after the corresponding reducer, will produce a new state (stateNew=reducer(stateOld, action))</li>\n<li>any editor's behavior (insert, drag-n-drop, resize, etc...) should be optional\nand easily disabled. Ideally, it should be an RxJS flow that returns either\na modifying action or a new editor context at the output</li>\n</ul>\n<p>These key ideas turned out to be correct, and the PoC I've developed, after\ninvolving other developers, was successfully turned into a working MVP within\na year</p>\n<p>This project was one of the most challenging in my career, and thanks to it, I\ngrew tremendously as a professional. Unfortunately, I had to leave it due to\nthe work-life balance not meeting my expectations (for context: the company's\nrating on GlassDoor is 3.3).</p>"
+		},
+		{
+			"company": {
+				"name": "SnapCart",
+				"site": "https://snapcart.global/",
+				"description": "The company was collecting analytics on purchases by scanning receipts."
+			},
+			"role": "Frontend Developer",
+			"employment": "Full-time",
+			"dates": [
+				"Apr 2018",
+				"Feb 2019"
+			],
+			"techs": [
+				[
+					"React",
+					"primary"
+				],
+				[
+					"Redux",
+					"primary"
+				],
+				[
+					"Redux-Saga",
+					"secondary"
+				],
+				[
+					"React-Admin",
+					"primary"
+				],
+				[
+					"MaterialUI",
+					"secondary"
+				],
+				[
+					"Formik",
+					"primary"
+				],
+				[
+					"Jestjs",
+					"secondary"
+				],
+				[
+					"Typescript",
+					"primary"
+				],
+				[
+					"PHP",
+					"secondary"
+				],
+				[
+					"Symfony",
+					"secondary"
+				]
+			],
+			"description": "<p>Our team’s task was to develop and maintain a system for manually entering data\nfrom receipts that failed OCR.</p>\n<p>My responsibilities were:</p>\n<ul>\n<li>implementing interfaces within the React Admin framework</li>\n<li>collaborating with the backend team to formalize contracts on API-endpoints</li>\n<li>customizing Material-UI elements according to the company’s brand guidelines and\ndeveloping elements not present in that UI KIT</li>\n<li>reviewing colleagues' code, writing and maintaining unit-tests</li>\n</ul>\n<p>The project was completed and launched, but was later discontinued as the company\ndidn’t secure the next round of funding.</p>"
+		},
+		{
+			"company": {
+				"name": "Dashnex",
+				"site": "https://dashnex.com/",
+				"description": "The company was developing a platform for hosting personal pages based on customizable, pre-defined templates.\n"
+			},
+			"role": "Senior Frontend Developer",
+			"employment": "Contract",
+			"dates": [
+				"Aug 2017",
+				"Mar 2018"
+			],
+			"techs": [
+				[
+					"Typescript",
+					"primary"
+				],
+				[
+					"Angular",
+					"primary"
+				],
+				[
+					"PHP",
+					"primary"
+				],
+				[
+					"Symfony",
+					"primary"
+				],
+				[
+					"Bootstrap",
+					"secondary"
+				],
+				[
+					"Mysql",
+					"secondary"
+				],
+				[
+					"Docker",
+					"secondary"
+				]
+			],
+			"description": "<p>My team's task was to migrate code responsible for rendering of client pages\nfrom AngularJS to Angular (version 4 at that time) and add server-side rendering.</p>\n<p>The main challenges were:</p>\n<ul>\n<li>the legacy codebase was a chaotic mix of server-generated fragments of\nHTML+JS, with even some dynamically rendered CSS</li>\n<li>many of the necessary API endpoints for data retrieval hadn’t been implemented</li>\n<li>there was a complete lack of integration tests</li>\n<li>angular SSR wasn’t yet part of the framework; it was just a\nthird-party library with rather poor documentation</li>\n</ul>\n<p>The project was successfully completed, resulting in several key outcomes:</p>\n<ul>\n<li>at least a basic set of integration tests was introduced</li>\n<li>although this refactoring was huge, the migration was seamless for users</li>\n<li>the page’s First Contentful Paint (FCP) dropped from 3 seconds to 400ms\n(90th percentile)</li>\n<li>client size was reduced from ~3MB to 800KB</li>\n<li>we became one of the first products to use SSR in production</li>\n</ul>\n<p>Through this project and the need to dig into the source code to solve emerging\nissues, I gained a deep understanding of how Angular works \"under the hood.\"</p>"
+		},
+		{
+			"company": {
+				"name": "MM.LaFleur",
+				"site": "https://mmlafleur.com/",
+				"description": "The company provided personalized styling services to make it easier for clients to select workwear."
+			},
+			"role": "Consultant",
+			"employment": "Contract",
+			"dates": [
+				"Oct 2016",
+				"May 2017"
+			],
+			"techs": [
+				[
+					"Typescript",
+					"primary"
+				],
+				[
+					"NodeJS",
+					"primary"
+				],
+				[
+					"Angular",
+					"secondary"
+				],
+				[
+					"Postgres",
+					"primary"
+				],
+				[
+					"SequelizeJS",
+					"primary"
+				],
+				[
+					"HAPI",
+					"primary"
+				],
+				[
+					"Python",
+					"secondary"
+				]
+			],
+			"description": "<p>I was hired on UpWork to develop an anti-fraud solution.</p>\n<p>The system I developed performed the following:</p>\n<ul>\n<li>regularly extracted data on all orders and their statuses from a Magento\nMySQL database</li>\n<li>retrieved shipment statuses via API or by scraping data from UPS, USPS, and\nShipStation</li>\n<li>flagged orders as normal or suspicious based on defined criteria</li>\n<li>offered a minimalistic interface in Angular + Material for handling suspicious\norders</li>\n</ul>\n<p>The system was completed, launched, and successfully integrated into the\ncompany’s business processes.</p>"
+		}
+	]
+}

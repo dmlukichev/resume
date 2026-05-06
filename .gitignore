@@ -1,1 +1,6 @@
 .idea
+.angular
+/dist
+/node_modules
+/tools
+
